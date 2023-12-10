@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #000;
+}
+
+body::before {
+    overflow: hidden;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("/static/image.png") center/cover no-repeat fixed;
+    filter: blur(5px);
+}
+
+.navbar {
+    background-color: rgba(173, 82, 173, 0.3);
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #343a40;
+}
+
+.circle-container svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #fff;
+}
+
+.btn-outline-purple {
+    color: #fff;
+    background-color: #800080aa;
+    border-color: #800080;
+}
+
+.btn-outline-purple:hover {
+    color: #fff;
+    background-color: #800080;
+    border-color: #800080;
+}
+
+.border-purple {
+    border: 2px solid #800080;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.border-purple:hover {
+    background-color: #800080;
+    border-color: #6a006a;
+}
+
+.card-purple {
+    background: #80008066;
+    border: 2px solid #6a006a;
+}
